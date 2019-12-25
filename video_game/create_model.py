@@ -76,7 +76,7 @@ model_builder.add_meta_graph_and_variables(
 model_builder.save()
 
 # Make a prediction with the neural network
-X = pd.read_csv("../04/proposed_new_product.csv").values
+X = pd.read_csv("proposed_new_product.csv").values
 prediction = model.predict(X)
 prediction = prediction[0][0]
 
